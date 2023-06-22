@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question Detail</title>
+  <style>
+    nav {
+      background-color: black;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    ul li {
+      list-style: none;
+      color: lightgrey;
+      padding: 10px 5px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .question-content {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 50px 0;
+    }
+
+    .vote {
+      text-align: center;
+      margin: 50px 0 30px 0;
+      font-size: 20px;
+    }
+
+    .rate-bar {
+      display: flex;
+      max-width: 700px;
+      margin: auto;
+      color: white;
+      font-weight: 800;
+      margin-bottom: 50px;
+    }
+
+    .rate-bar .dislike {
+      flex-basis: 40%;
+      padding: 10px;
+      text-align: center;
+      background: red;
+    }
+
+    .rate-bar .like {
+      flex-grow: 1;
+      padding: 10px;
+      text-align: center;
+      background-color: rgb(68, 114, 222);
+    }
+
+    .btn {
+      text-align: center;
+    }
+
+    .btn button {
+      background-color: rgb(42, 164, 42);
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="logo"><a href="#">Hỏi.MịeĐê!</a></li>
+      <li><a href="/ask">Hỏi nhanh</a></li>
+      <li><a href="/">Đáp gọn</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <div class="question-content">Học ở rikkei có khó không</div>
+    <div class="vote"><span class="vote-number">6</span> votes</div>
+    <div class="rate-bar">
+      <div class="dislike">40%</div>
+      <div class="like">60%</div>
+    </div>
+    <div class="btn">
+      <button id="btn">Xem câu hỏi khác</button>
+    </div>
+  </div>
+
+  <!-- Nhúng file JS tĩnh -->
+  <script src="/question-detail.js"></script>
+</body>
+
+</html>
